@@ -26,7 +26,8 @@ public class Rectangulo {
     }
     
     public double area(){
-        double area = 
+        double area = base*altura;
+        return area;
     }
     
     public double getBase(){
