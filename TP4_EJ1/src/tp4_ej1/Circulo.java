@@ -11,38 +11,32 @@ package tp4_ej1;
  */
 public class Circulo {
     
-    private double base;
+    private double radio;
     
-    private double altura;
+ 
     
     public Circulo(){
     
     };
     
     public Circulo(double base,double altura){
-        this.altura = altura;
-        this.base = base;
-    }
-    
-    public double area(){
+        this.radio = radio;
         
     }
     
-    public double getBase(){
-        return base;
+    public double area(){
+        double area= Math.PI * radio*radio;
+        return area;
+    }
+    
+    public double getRadio(){
+        return radio;
     }
     
     public void setbase(double base){
-        this.base = base;
+        this.radio = radio;
     }
     
-    public double getAltura(){
-        return altura;
-    }
-    
-    public void setAltura(double altura){
-        this.altura = altura;
-    }
     
     
     
