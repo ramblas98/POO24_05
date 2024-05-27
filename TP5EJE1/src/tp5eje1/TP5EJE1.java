@@ -15,6 +15,29 @@ public class TP5EJE1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         Inmueble im1= new Inmueble("Alvarado 1030","departamento",250003);
+        Inmueble im2= new Inmueble("Facio 77","casa",3000004);
+        
+        Disfraz D1 = new Disfraz("pikachu",'S',4000);
+        Disfraz D2= new Disfraz("batman",'L',4000);
+        
+        System.out.println(im1.toString());
+        
+        System.out.println(im2.toString());
+        
+        System.out.println(D1.toString());
+        
+        System.out.println(D2);
+        
+        if(D1.alquilado()) System.out.println("El disfraz esta alquilado");
+        else System.out.println("El disfraz no esta alquilado");
+        D1.alquilar(4);
+        if(D1.alquilado()) System.out.println("El disfraz esta alquilado");
+        else System.out.println("El disfraz no esta alquilado");
+        System.out.println(D1);
+        D1.desocupar();
+        if(D1.alquilado()) System.out.println("El disfraz esta alquilado");
+        else System.out.println("El disfraz no esta alquilado");
     }
     
 }
