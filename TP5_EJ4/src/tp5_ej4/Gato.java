@@ -30,20 +30,20 @@ public class Gato extends Animal{
     
     @Override
     public boolean esIgual(Object o) {
-        Animal otro = (Animal) o;
+        Hablador otro = (Hablador) o;
         return this.getTipo().equals(otro.darNombre());
     }
 
     @Override
     public boolean esMayor(Object o) {
-        Animal otro = (Animal) o;
+        Hablador otro = (Hablador) o;
         if(this.getTipo().compareTo(otro.darNombre())>0) return true;
         else return false;
     }
 
     @Override
     public boolean esMenor(Object o) {
-        Animal otro = (Animal) o;
+        Hablador otro = (Hablador) o;
         if(this.getTipo().compareTo(otro.darNombre())<0) return true;
         else return false;
     }

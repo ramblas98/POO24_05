@@ -30,20 +30,20 @@ public class Programador extends Persona{
     
     @Override
     public boolean esIgual(Object o) {
-        Persona otro = (Persona) o;
+        Hablador otro = (Hablador) o;
         return this.getNombre().equals(otro.darNombre());
     }
 
     @Override
     public boolean esMayor(Object o) {
-        Persona otro = (Persona) o;
+        Hablador otro = (Hablador) o;
         if(this.getNombre().compareTo(otro.darNombre())>0) return true;
         else return false;
     }
 
     @Override
     public boolean esMenor(Object o) {
-        Persona otro = (Persona) o;
+        Hablador otro = (Hablador) o;
         if(this.getNombre().compareTo(otro.darNombre())<0) return true;
         else return false;
     }

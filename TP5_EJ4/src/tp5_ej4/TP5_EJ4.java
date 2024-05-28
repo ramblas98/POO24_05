@@ -15,6 +15,7 @@ public class TP5_EJ4 {
      */
     public static void main(String[] args) {
         int i;
+        
         Hablador lista[]= new Hablador[3];
         lista[0]= new Perro("Salchicha",6);
         lista[1]= new Gato("Burmes",2);
@@ -23,8 +24,7 @@ public class TP5_EJ4 {
         System.out.println();
         
         for(i=0;i<3;i++){
-           lista[i].saluda(); 
-           
+           lista[i].saluda();
         }
         
         Arrays.sort(lista,new CompRelaciones());
